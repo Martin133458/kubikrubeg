@@ -1,0 +1,77 @@
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+.wrapper {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr; 
+    
+    gap: 20px 20px; 
+   
+    grid-template-areas: 
+      "code1 code1 code2"
+      "code1 code1 code3"
+      "code4 code6 code6"
+      "code5 code6 code6"
+      "code7 code7 code8"
+      "code7 code7 code9"; 
+
+
+      .code1 {
+         grid-area: code1;
+       
+        }
+      .code2 {
+         grid-area: code2;
+       
+        }
+      .code3 { 
+        grid-area: code3;
+
+     }
+      .code4 {
+         grid-area: code4;
+
+        }
+      .code5 {
+         grid-area: code5;
+
+         }
+      .code6 {
+         grid-area: code6; 
+        
+        }
+      .code7 { 
+        grid-area: code7;
+         
+    }
+      .code8 {
+         grid-area: code8;
+
+        }
+      .code9 {
+         grid-area: code9;
+
+         }
+    }
+
+    .card {
+       min-height: 360px;
+        border: 2px solid black;
+        display: flex;  
+        justify-content: center;
+        align-items: center;
+        background-color: gray;
+
+    }
+    /* .code1,.code6,.code7 {
+        width: 725px;
+        height: 725px;
+    }
+    .code2,.code3,.code4,.code5,.code8,.code9 {
+        width: 300px;
+        height: 300px;
+    } */
